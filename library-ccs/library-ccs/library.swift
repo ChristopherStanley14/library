@@ -44,14 +44,14 @@ class Library {
         io.writeMessage("Enter the title of the book:")
         currentInput = io.getInput()
         
-        for books in library.checkedOutArray {
-            
-            if books == currentInput {
-                library.checkedOutArray.filter {$0 != currentInput}
-                library.libraryArray.append(currentInput)
-                print("Checked In \(currentInput)")
+        if library.checkedOutArray.contains(currentInput) {
+            if let index = checkedOutArray.index(of: currentInput) {
+                checkedOutArray.remove(at: index)
             }
-            
+            libraryArray.append(currentInput)
+            print("Checked in \(currentInput)")
+        } else {
+            print("That book isn't checked out!")
         }
         
         
@@ -66,14 +66,15 @@ class Library {
         io.writeMessage("Enter the title of the book:")
         currentInput = io.getInput()
         
-        for books in library.libraryArray {
-            if books == currentInput {
-                libraryArray.filter {$0 != currentInput}
-                checkedOutArray.append(currentInput)
-                print("Checked Out \(currentInput)")
+        if library.libraryArray.contains(currentInput) {
+            if let index = libraryArray.index(of: currentInput) {
+                libraryArray.remove(at: index)
             }
+            checkedOutArray.append(currentInput)
+            print("Checked out \(currentInput)")
+        } else {
+            print("We don't have that book!")
         }
-        print("We don't have that book!")
         
         
         return
