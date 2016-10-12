@@ -11,7 +11,6 @@
 		B9A222741DAD3AAF00BA5E9D /* interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222731DAD3AAF00BA5E9D /* interactive.swift */; };
 		B9A222761DAD3AC500BA5E9D /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222751DAD3AC500BA5E9D /* io.swift */; };
 		B9A222781DAD3DE900BA5E9D /* library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222771DAD3DE900BA5E9D /* library.swift */; };
-		B9A2227A1DAD748100BA5E9D /* books.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222791DAD748100BA5E9D /* books.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +31,6 @@
 		B9A222731DAD3AAF00BA5E9D /* interactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interactive.swift; sourceTree = "<group>"; };
 		B9A222751DAD3AC500BA5E9D /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
 		B9A222771DAD3DE900BA5E9D /* library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = library.swift; sourceTree = "<group>"; };
-		B9A222791DAD748100BA5E9D /* books.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = books.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 				B9A222731DAD3AAF00BA5E9D /* interactive.swift */,
 				B9A222751DAD3AC500BA5E9D /* io.swift */,
 				B9A222771DAD3DE900BA5E9D /* library.swift */,
-				B9A222791DAD748100BA5E9D /* books.swift */,
 			);
 			path = "library-ccs";
 			sourceTree = "<group>";
@@ -136,7 +133,6 @@
 				B9A222781DAD3DE900BA5E9D /* library.swift in Sources */,
 				B9A222761DAD3AC500BA5E9D /* io.swift in Sources */,
 				B9A2226D1DAD344500BA5E9D /* main.swift in Sources */,
-				B9A2227A1DAD748100BA5E9D /* books.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +262,7 @@
 				B9A222721DAD344500BA5E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

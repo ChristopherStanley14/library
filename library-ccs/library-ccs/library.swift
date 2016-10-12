@@ -19,19 +19,63 @@ class Library {
                         "Pride and Prejudice",
                         "Harry Potter"]
     
+    var checkedOutArray = ["Carrie",
+                           "It",
+                           "The Dead Zone"]
+    
     
     
     
     
     func addBook() {
-
+        
         io.writeMessage("Enter the title of the book:")
         currentInput = io.getInput()
         
         library.libraryArray.append(currentInput)
-        for books in library.libraryArray {
-            print(books)
+        print("Added \(currentInput)")
+        
+        return
+    }
+    
+    
+    func checkIn() {
+        
+        io.writeMessage("Enter the title of the book:")
+        currentInput = io.getInput()
+        
+        for books in library.checkedOutArray {
+            
+            if books == currentInput {
+                library.checkedOutArray.filter {$0 != currentInput}
+                library.libraryArray.append(currentInput)
+                print("Checked In \(currentInput)")
+            }
+            
         }
+        
+        
+        
+        
+        
+        return
+    }
+    
+    func checkOut() {
+        
+        io.writeMessage("Enter the title of the book:")
+        currentInput = io.getInput()
+        
+        for books in library.libraryArray {
+            if books == currentInput {
+                libraryArray.filter {$0 != currentInput}
+                checkedOutArray.append(currentInput)
+                print("Checked Out \(currentInput)")
+            }
+        }
+        print("We don't have that book!")
+        
+        
         return
     }
 }
